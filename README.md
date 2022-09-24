@@ -4,7 +4,7 @@
 
 ## INSTALLATION
 
-Install the package through [Composer](http://getcomposer.org/).
+Install the package through [Composer](https://packagist.org/packages/kerodev/short-link).
 
 `composer require kerodev/short-link`
 
