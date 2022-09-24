@@ -1,0 +1,37 @@
+{
+    "name": "kerodev/short-link",
+    "description": "Short link by Bitly",
+    "type": "library",
+    "require": {
+        "ext-http": "*",
+        "guzzlehttp/guzzle": "7.5.x-dev",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+           "kerodev\\ShortLink\\" : "src/"
+        },
+        "files" : [
+            "src/helpers/helper.php"
+        ]
+    },
+
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "keroles19",
+            "email": "kerolesatef200@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kerodev\\ShortLink\\ShorterLinkServiceProvider"
+            ],
+            "aliases": {
+                "Shorter": "kerodev\\ShortLink\\Shorter"
+            }
+        }
+    }
+}
